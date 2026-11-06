@@ -50,14 +50,14 @@
 
   <h1 class="title">Privacy Policy</h1>
   <p class="subtitle">CashTrack &ndash; Expense Tracker</p>
-  <p class="date">Last updated: April 18, 2026</p>
+  <p class="date">Last updated: November 6, 2026</p>
 
   <h2>1. Introduction</h2>
   <p>Welcome to CashTrack. This Privacy Policy explains how CashTrack (&ldquo;the App&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) handles information when you use our Android expense tracking application. We are committed to protecting your privacy and being fully transparent about our data practices.</p>
 
   <h2>2. Information We Collect</h2>
   <p>CashTrack does not intentionally collect, transmit, or store any personal information on external servers. The App does not require you to create an account or provide any personal details to use its features.</p>
-  <p>All data you enter into the App &mdash; including expense records, categories, and budget settings &mdash; is stored locally on your device and is not transmitted by the App to any external servers.</p>
+  <p>All data you enter into the App &mdash; including expense records, categories, budget settings, and receipt photos &mdash; is stored locally on your device and is not transmitted by the App to any external servers. The only exception is the anonymous technical diagnostics collected by Google ML Kit, described in Section 5, which never include your expenses or your photos.</p>
 
   <h2>3. Local Data Storage</h2>
   <p>All information entered into CashTrack is saved locally on your device. This includes:</p>
@@ -65,8 +65,11 @@
     <li>Expense entries and amounts</li>
     <li>Expense categories and labels you create</li>
     <li>Monthly budget settings and preferences</li>
+    <li>Receipt photos you attach to expenses, and the amounts and dates read from them</li>
+    <li>Recurring expense rules</li>
   </ul>
   <p>This data is stored locally on your device and is not accessible by the developer.</p>
+  <p>Backups and exports you create (a backup file that includes your receipt photos, a CSV spreadsheet, or a PDF report) are saved to the location you choose, or, for automatic backups, to your device&rsquo;s Downloads folder. These files stay under your control and are never sent to us.</p>
   <p>Please note: By default, the Android operating system may automatically back up your App data to your personal Google Drive account to allow for data restoration. We (the developer) do not have access to these backups, and you can manage or disable this backup feature at any time through your device&rsquo;s Android settings.</p>
 
   <h2>4. In-App Purchases</h2>
@@ -75,13 +78,19 @@
   <p>Purchase records may be associated with your Google account as managed by Google Play. We have no access to or control over this data.</p>
 
   <h2>5. Third-Party Services</h2>
-  <p>CashTrack uses Google Play Billing to process in-app purchases. Outside of this, the App does not integrate any third-party SDKs, analytics services, advertising networks, or cloud services. No personal data is shared with any third parties beyond what is described in Section 4 above.</p>
+  <p>CashTrack uses two Google services:</p>
+  <ul>
+    <li><strong>Google Play Billing</strong>, to process in-app purchases, as described in Section 4.</li>
+    <li><strong>Google ML Kit Text Recognition</strong>, to read the total and date from a receipt photo you attach. Recognition runs entirely on your device: your receipt photos and the text read from them are not sent to Google or to us.</li>
+  </ul>
+  <p>To monitor and improve ML Kit, Google collects anonymous technical diagnostics from the App, such as device information (manufacturer, model, Android version), the App&rsquo;s package name and version, a per-installation identifier that is not intended to identify you or your device, performance measurements, and error codes. This data is sent to Google over an encrypted connection, and Google states that it does not transfer it to third parties. You can read Google&rsquo;s description at <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ML Kit data disclosure</a>.</p>
+  <p>Outside of these, the App does not integrate any other third-party SDKs, analytics services, advertising networks, or cloud services. No personal data is shared with any third parties beyond what is described in Section 4 and this section.</p>
 
   <h2>6. Internet Access</h2>
-  <p>CashTrack functions entirely offline for its core expense tracking features. The App may connect to the internet solely to verify and process in-app purchases through Google Play Billing. No expense data, categories, or personal information are transmitted during this process.</p>
+  <p>CashTrack&rsquo;s expense tracking features work entirely offline. The App connects to the internet only to verify and process in-app purchases through Google Play Billing, and for Google ML Kit to send the anonymous diagnostics described in Section 5. No expense data, categories, receipt photos, or personal information are transmitted.</p>
 
   <h2>7. App Permissions</h2>
-  <p>CashTrack does not request or require access to contacts, location, storage, camera, or other sensitive device permissions. The App operates using only the resources necessary to provide local expense tracking functionality.</p>
+  <p>CashTrack does not request or require access to contacts, location, storage, camera, or other sensitive device permissions. When you attach a receipt, the App opens your device&rsquo;s own camera app or photo picker, which gives CashTrack only the single photo you take or choose.</p>
 
   <h2>8. Biometric Authentication</h2>
   <p>CashTrack offers an optional biometric lock feature. This feature uses your device&rsquo;s built-in biometric authentication system (such as fingerprint or face recognition). The App does not access, collect, or store any biometric data. All authentication is handled entirely by the device&rsquo;s operating system.</p>
@@ -98,13 +107,13 @@
     <li>Uninstalling CashTrack from your device, or</li>
     <li>Navigating to Settings &gt; Apps &gt; CashTrack &gt; Clear Data on your Android device</li>
   </ul>
-  <p>Either action permanently removes all locally stored data. Purchase records managed by Google Play are subject to Google&rsquo;s own data retention policies.</p>
+  <p>Either action permanently removes all data stored inside the App, including receipt photos. Backup and export files you saved outside the App (for example, in your Downloads folder) are not removed; you can delete them with your device&rsquo;s file manager. Purchase records managed by Google Play are subject to Google&rsquo;s own data retention policies.</p>
 
   <h2>12. California Privacy Rights (CCPA)</h2>
-  <p>If you are a California resident, the California Consumer Privacy Act (CCPA) may provide you with certain rights regarding your personal information. Because CashTrack does not intentionally collect, sell, or share any personal information, there is no personal data to access, delete, or opt out of selling. We do not sell personal information to third parties.</p>
+  <p>If you are a California resident, the California Consumer Privacy Act (CCPA) may provide you with certain rights regarding your personal information. Because CashTrack does not intentionally collect, sell, or share any personal information, there is no personal data held by us to access, delete, or opt out of selling. The anonymous diagnostics described in Section 5 are collected and processed by Google under its own terms. We do not sell personal information to third parties.</p>
 
   <h2>13. European Users (GDPR)</h2>
-  <p>If you are located in the European Economic Area (EEA), you may have certain rights under the General Data Protection Regulation (GDPR). Because CashTrack does not intentionally collect any personal data, there is no data to access, correct, export, or delete on our end. All data you enter remains solely on your device under your full control. In-app purchase processing by Google Play is governed by Google&rsquo;s own GDPR compliance framework.</p>
+  <p>If you are located in the European Economic Area (EEA), you may have certain rights under the General Data Protection Regulation (GDPR). Because CashTrack does not intentionally collect any personal data, there is no data to access, correct, export, or delete on our end. All data you enter remains solely on your device under your full control. In-app purchase processing by Google Play, and the ML Kit diagnostics described in Section 5, are governed by Google&rsquo;s own GDPR compliance framework.</p>
 
   <h2>14. Governing Law</h2>
   <p>This Privacy Policy is governed by and construed in accordance with the laws of the Commonwealth of Virginia, United States, without regard to its conflict of law provisions.</p>
