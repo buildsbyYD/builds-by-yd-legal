@@ -50,56 +50,76 @@
 
   <h1 class="title">Privacy Policy</h1>
   <p class="subtitle">TripKit &ndash; Travel Assistant</p>
-  <p class="date">Last updated: July 26, 2026</p>
+  <p class="date">Last updated: November 23, 2026</p>
 
   <h2>1. Introduction</h2>
   <p>Welcome to TripKit. This Privacy Policy explains how TripKit (&ldquo;the App&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) handles information when you use our Android travel assistant application. We are committed to protecting your privacy and being fully transparent about our data practices.</p>
 
   <h2>2. Information We Collect</h2>
-  <p>TripKit does not intentionally collect, transmit, or store any personal information on external servers. The App does not require you to create an account or provide any personal details to use its features.</p>
-  <p>All data you enter into the App &mdash; including trip dates, destinations, packing lists, shopping lists, and Vault documents &mdash; is stored locally on your device and is not transmitted by the App to any external servers.</p>
+  <p>We do not collect any personal information. TripKit has no account sign-up, no analytics, no advertising, and no tracking, and we do not run any server that receives your data.</p>
+  <p>Everything you enter into the App &mdash; including trips, dates, destinations, packing and souvenir lists, budgets, and Vault contents &mdash; is stored only on your device and is never sent to us.</p>
 
   <h2>3. Local Data Storage &amp; Secure Vault</h2>
-  <p>All information entered into TripKit is saved locally on your device. This includes the <strong>Secure Vault</strong> feature. Items stored in the Vault (such as booking references, personal notes, and passport/document photos) are encrypted locally using industry-standard AES-256 encryption and kept strictly on your device's internal storage.</p>
-  <p>This data is not accessible by the developer. Because we do not have a backend server, we cannot retrieve, read, or restore your Vault data if you forget your PIN or lose your device.</p>
-  <p>Please note: By default, the Android operating system may automatically back up your App data to your personal Google Drive account. We do not have access to these backups, and you can manage or disable this backup feature through your device&rsquo;s Android settings.</p>
-
-  <h2>4. Internet Access &amp; Third-Party Services</h2>
-  <p>TripKit functions primarily offline. However, the App requires internet access solely to fetch live currency exchange rates. When updating rates, the App sends generic currency codes (e.g., "USD", "EUR") to a public exchange rate API. <strong>No personal data, trip details, or Vault information is ever transmitted during this process.</strong></p>
-
-  <h2>5. App Permissions</h2>
-  <p>TripKit may request the following permissions to function properly:</p>
+  <p>All App data is stored on your device in encrypted storage (AES-256). This includes the <strong>Secure Vault</strong>, which can hold:</p>
   <ul>
-    <li><strong>Photos/Media:</strong> Required only if you choose to add document photos to your Secure Vault. The App only accesses the specific photos you select.</li>
-    <li><strong>Biometrics:</strong> Required if you choose to lock your Secure Vault using fingerprint or face recognition.</li>
-    <li><strong>Notifications:</strong> Required on Android 13 or higher if you choose to enable local flight reminders. Notifications are generated entirely on your device and are not sent through external messaging servers.</li>
+    <li>Flight details and booking references</li>
+    <li>Places you are staying (names, addresses, landmarks, phone numbers)</li>
+    <li>Emergency information you choose to enter, such as allergies, blood type, medications, an emergency contact, and travel insurance details</li>
+    <li>Document photos (for example, a passport or visa) and personal notes</li>
+  </ul>
+  <p>Vault photos are saved as encrypted files in the App&rsquo;s private storage. The Vault is protected by your PIN and, if you choose, your device&rsquo;s biometric unlock. While the Vault is open, the App blocks screenshots and screen recording of it.</p>
+  <p>We cannot access this data. Because we have no server, we cannot retrieve, read, or restore your Vault data if you forget your PIN or lose your device.</p>
+  <p>Please note: depending on your device settings, Android may automatically back up App data to your personal Google account. We do not have access to these backups, and you can manage or turn off this feature in your device&rsquo;s Android settings.</p>
+
+  <h2>4. Backup Files You Create</h2>
+  <p>TripKit lets you save a backup file of your trips and settings to a location you choose (for example, your device storage or a cloud drive you use). We never receive these files.</p>
+  <ul>
+    <li>Vault text (such as booking references, addresses, emergency information, and notes) is included only if you enter your Vault PIN when creating the backup.</li>
+    <li>Vault photos are never included in a backup.</li>
+    <li><strong>Backup files are not encrypted.</strong> Anyone who can open the file can read its contents, so store it somewhere private.</li>
   </ul>
 
-  <h2>6. Biometric Authentication</h2>
-  <p>TripKit offers an optional biometric lock feature for the Secure Vault. This uses your device&rsquo;s built-in biometric authentication system. The App does not access, collect, or store your biometric data. All authentication is handled entirely by the Android operating system.</p>
+  <h2>5. Internet Access &amp; Third-Party Services</h2>
+  <p>TripKit works offline except for one feature: fetching currency exchange rates. To get rates, the App requests public exchange-rate data from <strong>open.er-api.com</strong> (ExchangeRate-API), with backup sources served through <strong>cdn.jsdelivr.net</strong> and <strong>pages.dev</strong>. These requests contain only currency codes (for example, &ldquo;USD&rdquo; and &ldquo;EUR&rdquo;).</p>
+  <p>As with any internet request, these providers can see your device&rsquo;s IP address and basic technical details of the request, under their own privacy policies. <strong>No personal data, trip details, or Vault information is ever sent.</strong> The latest rates are saved on your device so conversions keep working offline.</p>
 
-  <h2>7. Children&rsquo;s Privacy</h2>
-  <p>TripKit does not intentionally collect personal information from anyone, including children under the age of 13. The App is designed to be usable by individuals of all ages.</p>
-
-  <h2>8. Data Security</h2>
-  <p>Since all data remains on your device, the security of your information depends on your device&rsquo;s built-in protections, such as screen locks, device encryption, and operating system security features. We recommend keeping your device and its software up to date.</p>
-
-  <h2>9. Data Deletion</h2>
-  <p>You can delete all App data at any time by:</p>
+  <h2>6. App Permissions</h2>
   <ul>
-    <li>Using the &ldquo;Clear All Trip Data&rdquo; or Vault &ldquo;Reset&rdquo; options within the App.</li>
-    <li>Uninstalling TripKit from your device.</li>
-    <li>Navigating to Settings &gt; Apps &gt; TripKit &gt; Clear Data on your Android device.</li>
+    <li><strong>Internet:</strong> Used only to fetch exchange rates, as described above.</li>
+    <li><strong>Notifications:</strong> Used on Android 13 or higher if you turn on packing reminders. Reminders are scheduled and shown entirely on your device and are not sent through any external messaging server.</li>
+    <li><strong>Biometrics:</strong> Used only if you choose to unlock your Vault with fingerprint or face recognition.</li>
+    <li><strong>Photos:</strong> TripKit uses Android&rsquo;s photo picker, so it sees only the specific photos you choose to add to your Vault. It does not need access to your full photo library.</li>
   </ul>
-  <p><strong>Warning:</strong> Uninstalling the App or clearing its data will permanently delete all photos and documents stored in the Secure Vault.</p>
+  <p>Buttons such as &ldquo;Call&rdquo; open your phone&rsquo;s dialer with the number filled in. The App does not place calls or read your call history or contacts.</p>
 
-  <h2>10. California Privacy Rights (CCPA) &amp; European Users (GDPR)</h2>
-  <p>Because TripKit does not intentionally collect, sell, or share any personal data, there is no personal data for us to access, correct, export, delete, or opt out of selling. All data you enter remains solely on your device under your full control.</p>
+  <h2>7. Biometric Authentication</h2>
+  <p>TripKit offers an optional biometric lock for the Secure Vault, using your device&rsquo;s built-in biometric system. The App never accesses, collects, or stores your biometric data. All authentication is handled entirely by the Android operating system.</p>
 
-  <h2>11. Governing Law</h2>
+  <h2>8. Children&rsquo;s Privacy</h2>
+  <p>TripKit does not collect personal information from anyone, including children under the age of 13.</p>
+
+  <h2>9. Data Security</h2>
+  <p>Because all data stays on your device, its security also depends on your device&rsquo;s own protections, such as a screen lock, device encryption, and up-to-date software. We recommend keeping these enabled.</p>
+
+  <h2>10. Data Deletion</h2>
+  <p>You can delete App data at any time by:</p>
+  <ul>
+    <li>Deleting a trip, or using <strong>Settings &gt; Erase everything</strong> to remove all trips, lists, and the Vault.</li>
+    <li>Using <strong>Forgot PIN?</strong> on the Vault lock screen, which erases all Vault data.</li>
+    <li>Uninstalling TripKit, or going to Settings &gt; Apps &gt; TripKit &gt; Clear Data on your Android device.</li>
+  </ul>
+  <p><strong>Warning:</strong> Uninstalling the App or clearing its data permanently deletes all photos stored in the Secure Vault. Backup files you saved yourself are not deleted by the App; you can delete them wherever you stored them.</p>
+
+  <h2>11. California Privacy Rights (CCPA) &amp; European Users (GDPR)</h2>
+  <p>Because TripKit does not collect, sell, or share any personal data, there is no personal data held by us to access, correct, export, delete, or opt out of. All data you enter stays on your device under your control.</p>
+
+  <h2>12. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the &ldquo;Last updated&rdquo; date at the top of this page.</p>
+
+  <h2>13. Governing Law</h2>
   <p>This Privacy Policy is governed by and construed in accordance with the laws of the Commonwealth of Virginia, United States, without regard to its conflict of law provisions.</p>
 
-  <h2>12. Contact Us</h2>
+  <h2>14. Contact Us</h2>
   <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
   <p>Developer: Builds by YD<br/>Email: <a href="mailto:support@buildsbyyd.com">support@buildsbyyd.com</a></p>
 
